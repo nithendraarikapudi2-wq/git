@@ -1,7 +1,7 @@
-import { defineConfig } from 'vite'; // <--- THIS LINE IS MISSING
-import react from '@vitejs/plugin-react'; // (or whatever plugin you use)
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  // ... rest of your config
-});
+  base: '/git/', // <--- Put your repository name between the slashes
+})
